@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="GPA Calculator:"
+        android:layout_marginBottom="2dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/course1Grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:hint= "Course 1 Grade"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/course2Grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:hint="Course 2 Grade"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/course3Grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:hint="Course 3 Grade"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/course4Grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:hint="Course 4 Grade"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/course5Grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:hint="Course 5 Grade"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/computeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:onClick="btn_click"
+        android:text="Compute GPA" />
+
+    <TextView
+        android:id="@+id/gpaResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="GPA: "
+        android:textSize="14sp" />
+
+
+</LinearLayout>
